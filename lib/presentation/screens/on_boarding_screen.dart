@@ -1,3 +1,4 @@
+import 'package:crypto_tokens_ui/presentation/widgets/get_started_button.dart';
 import 'package:flutter/material.dart';
 
 class OnBoardingScreen extends StatefulWidget {
@@ -92,6 +93,23 @@ class _OnBoardingScreenState extends State<OnBoardingScreen> {
                           fontWeight: FontWeight.bold,
                         ),
                   ),
+                  const SizedBox(
+                    height: 20,
+                  ),
+                  Text(
+                    textAlign: TextAlign.center,
+                    'Unlock the world of crypto with ease\nand confidence',
+                    style: Theme.of(context).textTheme.bodyLarge?.copyWith(
+                          fontWeight: FontWeight.bold,
+                          color: Colors.grey.shade700,
+                        ),
+                  ),
+                  const SizedBox(
+                    height: 20,
+                  ),
+
+                  // get started button
+                  GetStartedButton(),
                 ],
               ),
             ),
