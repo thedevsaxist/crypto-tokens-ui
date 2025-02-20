@@ -1,4 +1,6 @@
+import 'package:crypto_tokens_ui/core/themes.dart';
 import 'package:crypto_tokens_ui/presentation/widgets/get_started_button.dart';
+import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 
 class OnBoardingScreen extends StatefulWidget {
@@ -82,7 +84,7 @@ class _OnBoardingScreenState extends State<OnBoardingScreen> {
           ),
           Center(
             child: Padding(
-              padding: const EdgeInsets.only(bottom: 90.0),
+              padding: const EdgeInsets.only(bottom: 70.0),
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.end,
                 children: [
@@ -104,12 +106,43 @@ class _OnBoardingScreenState extends State<OnBoardingScreen> {
                           color: Colors.grey.shade700,
                         ),
                   ),
+
+                  const SizedBox(
+                    height: 80,
+                  ),
+
+                  // get started button
+                  const GetStartedButton(),
+
                   const SizedBox(
                     height: 20,
                   ),
 
-                  // get started button
-                  GetStartedButton(),
+                  // login instead
+                  Center(
+                    child: RichText(
+                      textAlign: TextAlign.center,
+                      text: TextSpan(
+                        text: 'Already have an account? ',
+                        style: Theme.of(context).textTheme.bodyLarge?.copyWith(
+                              fontWeight: FontWeight.w500,
+                              letterSpacing: 0.05,
+                            ),
+                        children: [
+                          TextSpan(
+                            text: 'Login',
+                            recognizer: TapGestureRecognizer(),
+                            // ..onTap = viewModel.navigateToLoginPage,
+                            style:
+                                Theme.of(context).textTheme.bodyLarge?.copyWith(
+                                      color: CTColors.black,
+                                      fontWeight: FontWeight.w800,
+                                    ),
+                          )
+                        ],
+                      ),
+                    ),
+                  ),
                 ],
               ),
             ),
