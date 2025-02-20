@@ -9,7 +9,7 @@ Crypto Tokens UI is a Flutter project that provides a user interface for display
 -   Add and remove tokens from the list
 -   Responsive design for both mobile and web
 
-![Onboarding Screen](<Simulator Screenshot - iPhone 15 - 2025-02-20 at 22.01.44.png>)
+![Onboarding Screen](Simulator Screenshot - iPhone 15 - 2025-02-20 at 22.01.44.png)
 
 ## Getting Started
 
