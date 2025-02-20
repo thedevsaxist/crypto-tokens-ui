@@ -25,3 +25,10 @@ flutter:
   uses-material-design: true
   assets:
     - lib/presentation/images/
+    - lib/presentation/images/solana.png
+    - lib/presentation/images/illuvium.png
+    - lib/presentation/images/ton.png
+    - lib/presentation/images/stellar.png
+    - lib/presentation/images/bitcoin.png
+    - lib/presentation/images/bnb.png
+    - lib/presentation/images/tether.png
