@@ -1,4 +1,5 @@
 import 'package:crypto_tokens_ui/core/themes.dart';
+import 'package:crypto_tokens_ui/presentation/widgets/frosted_background_gradient.dart';
 import 'package:crypto_tokens_ui/presentation/widgets/get_started_button.dart';
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
@@ -17,6 +18,23 @@ class _OnBoardingScreenState extends State<OnBoardingScreen> {
       body: Stack(
         alignment: Alignment.topCenter,
         children: [
+          const Row(
+            children: [
+              // left gradient
+              FrostedBackgroundGradient(
+                color: CTColors.leftGradientDark,
+                leftGradient: CTColors.leftGradientDark,
+                rightGradient: CTColors.leftGradientLight,
+              ),
+
+              // right gradient
+              FrostedBackgroundGradient(
+                color: CTColors.rightGradientDark,
+                leftGradient: CTColors.rightGradientDark,
+                rightGradient: CTColors.rightGradientLight,
+              ),
+            ],
+          ),
           // solana
           Positioned(
             top: 10,
