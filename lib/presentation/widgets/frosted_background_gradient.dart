@@ -27,12 +27,20 @@ class FrostedBackgroundGradient extends StatelessWidget {
             Container(
               decoration: BoxDecoration(
                 gradient: LinearGradient(
-                  begin: Alignment.topLeft,
-                  end: Alignment.center,
+                  begin: Alignment.topCenter,
+                  end: Alignment.bottomCenter,
                   colors: [
                     Colors.white.withOpacity(.1),
                     Colors.white.withOpacity(.2),
                   ],
+                ),
+              ),
+            ),
+            Center(
+              child: Container(
+                height: 100,
+                decoration: BoxDecoration(
+                  color: color.withGreen(50),
                 ),
               ),
             ),

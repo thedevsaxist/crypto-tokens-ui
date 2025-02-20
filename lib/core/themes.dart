@@ -3,7 +3,7 @@ import 'package:google_fonts/google_fonts.dart';
 
 final ThemeData appTheme = ThemeData(
   useMaterial3: true,
-  fontFamily: GoogleFonts.mandali().fontFamily,
+  fontFamily: GoogleFonts.robotoFlex().fontFamily,
   scaffoldBackgroundColor: CTColors.backgroundColor,
 );
 
